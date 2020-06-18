@@ -6,7 +6,7 @@ SHELL := /bin/bash
 
 .PHONY: client
 client:
-	virtualenv venv
+	virtualenv -p /usr/bin/python2.7 venv
 	venv/bin/pip install -e .
 	ln -s venv/bin/blessclient ./blessclient.run
 
